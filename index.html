@@ -164,9 +164,7 @@
         
         var option1 = jQuery.rand(options1);
         var option2 = jQuery.rand(options2);
-        
-        $("#option1").attr("src", option1);
-        $("#option2").attr("src", option2);
+        $("#iframes").html("<iframe src='"+option1+"'></iframe><iframe src='"+option2+"'></iframe>");
     })(jQuery);
     </script>
     <style>
@@ -181,7 +179,6 @@
     </style>
   </head>
   <body>
-    <iframe id="option1" src="#"></iframe>
-    <iframe id="option2" src="#"></iframe>
+    <div id="iframes"></div>
   </body>
 </html>
