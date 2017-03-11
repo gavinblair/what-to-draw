@@ -9,7 +9,6 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
     <script>
-      var pinterest = "https://www.pinterest.com/characterdesigh/";
       var options1 = [
         "https://www.pinterest.com/characterdesigh/vehicle-design/",
         "https://www.pinterest.com/characterdesigh/vehicle-design-flying-machines/",
@@ -164,18 +163,15 @@
         
         var option1 = jQuery.rand(options1);
         var option2 = jQuery.rand(options2);
-        $("#iframes").html("<div><a href='"+option1+"'>"+option1+"</a><br /><a href='"+option2+"'>"+option2+"</a></div>");
+        $("#iframes").html("<div><p><a href='"+option1+"'>"+option1+"</a></p><p><a href='"+option2+"'>"+option2+"</a></p></div>");
         
       });
     </script>
     <style>
-      iframe {
-        height: 100v;
-        width: 50vw;
-        float: left;
-        margin: 0;
-        padding: 0;
-        border: none;
+      p {
+        font-size: 72px;
+        text-align: center;
+        font-family: sans-serif;
       }
     </style>
   </head>
