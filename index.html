@@ -164,8 +164,8 @@
         
         var option1 = jQuery.rand(options1);
         var option2 = jQuery.rand(options2);
-        $("<iframe src='"+option1+"'></iframe>").appendTo("#iframes");
-        $("<iframe src='"+option2+"'></iframe>").appendTo("#iframes");
+        $("<iframe src='"+option1+"'></iframe>").appendTo($("#iframes"));
+        $("<iframe src='"+option2+"'></iframe>").appendTo($("#iframes"));
     })(jQuery);
     </script>
     <style>
