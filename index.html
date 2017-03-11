@@ -151,7 +151,7 @@
         "https://www.pinterest.com/characterdesigh/creature-design-robots/",
         "https://www.pinterest.com/characterdesigh/creature-design-objects/"
       ];
-      (function($) {
+      jQuery( document ).ready(function($) {
         $.rand = function(arg) {
             if ($.isArray(arg)) {
                 return arg[$.rand(arg.length)];
@@ -166,7 +166,7 @@
         var option2 = jQuery.rand(options2);
         $("#iframes").html("<div>WTF</div>");  //<iframe src='"+option1+"'></iframe><iframe src='"+option2+"'></iframe>
         
-    })(jQuery);
+      });
     </script>
     <style>
       iframe {
