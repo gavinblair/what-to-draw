@@ -8,6 +8,9 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+    <script
+  src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
+  data-apikey="2d3b57a4897f4ae9018665e6b6df21d9"></script>
     <script>
       var options1 = [
         "https://www.pinterest.com/characterdesigh/vehicle-design/",
@@ -165,6 +168,8 @@
         var option2 = jQuery.rand(options2);
         $("#iframes").html("<div><p><a href='"+option1+"'>"+option1+"</a></p><p><a href='"+option2+"'>"+option2+"</a></p></div>");
         
+        Bugsnag.notify("ErrorName", "Test Error");
+
       });
     </script>
     <style>
